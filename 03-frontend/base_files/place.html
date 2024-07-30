@@ -7,23 +7,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <img src="logo.png" class="logo" alt="Application Logo">
+        <nav>
+            <a href="login.html" class="login-button">Login</a>
+        </nav>
+    </header>
     <main>
-        <section id="place-details">
-            <!-- Place details will be populated dynamically -->
+        <section class="place-details">
+            <h2>Beautiful Beach House</h2>
+            <div class="place_details_container">
+            <p><strong>Host:</strong> John Doe</p>
+            <p><strong>Price per night:</strong> $150</p>
+            <p><strong>Location:</strong> Los Angeles, United States</p>
+            <p><strong>Description:</strong> A beautiful beach house with amazing views....</p>
+            <p><strong>Amenities:</strong> WiFi, Pool, Air Conditioning</p>
+            </div>
         </section>
         <section id="reviews">
-            <!-- Reviews will be populated dynamically -->
+            <h2>Reviews</h2>
+            <!-- Exemple de carte de revue -->
+            <div class="review-card">
+                <div class="review-owner">
+                <p>Jane Smith:</p>
+                </div>
+                <p>Great place to stay!</p>
+                <p>Rating: <span class="rating">★★★★</span></p>
+            </div>
+            <div class="review-card">
+                <div class="review-owner">
+                    <p>Robert Brown:</p>
+                    </div>
+                <p>Amazing location and very comfortable.</p>
+                <p>Rating: <span class="rating">★★★★★</span></p>
+            </div>
         </section>
         <section id="add-review">
             <h2>Add a Review</h2>
             <form id="review-form">
-                <label for="review-text">Review:</label>
+                <label for="review-text"><strong>Your Review:</strong></label>
                 <textarea id="review-text" name="review-text" required></textarea>
-                
-                <button type="submit">Submit</button>
+                <label for="review-rating"><strong>Rating:</strong></label>
+                <select id="review-rating" name="review-rating" required>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button type="submit">Submit Review</button>
             </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
