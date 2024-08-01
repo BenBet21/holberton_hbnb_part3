@@ -17,35 +17,14 @@
         <section>
             <h2>Available Places</h2>
             <div class="filter-container">            
-            <label for="country-filter"><strong>Filter by country:</strong></label>
-            <select id="country-filter">
-                <option value="all">All</option>
-                <!-- Ajoutez d'autres options de pays ici -->
-            </select>
-        </div>
-        </section>
-        <section id="places-list">
-            <!-- Exemple de cartes de lieux -->
-            <div class="place-card">
-                <img src="image-du-lieu.jpg" alt="Image du lieu" class="place-image">
-                <h3>Beautiful Beach House</h3>
-                <p>Price per night: $150</p>
-                <p>Location: Los Angeles, United States</p>
-                <a href="place.html" class="details-button">View Details</a>
+                <label for="country-filter"><strong>Filter by country:</strong></label>
+                <select id="country-filter">
+                    <option value="">All</option>
+                    <!-- Les options de pays seront ajoutées ici par JavaScript -->
+                </select>
             </div>
-            <div class="place-card">
-                <img src="image-du-lieu.jpg" alt="Image du lieu" class="place-image">
-                <h3>Cozy Cabin</h3>
-                <p>Price per night: $100</p>
-                <p>Location: Toronto, Canada</p>
-                <a href="place.html" class="details-button">View Details</a>
-            </div>
-            <div class="place-card">
-                <img src="image-du-lieu.jpg" alt="Image du lieu" class="place-image">
-                <h3>Modern Apartment</h3>
-                <p>Price per night: $200</p>
-                <p>Location: New York, United States</p>
-                <a href="place.html" class="details-button">View Details</a>
+            <div id="places-list">
+                <!-- Les lieux disponibles seront affichés ici par JavaScript -->
             </div>
         </section>
     </main>
